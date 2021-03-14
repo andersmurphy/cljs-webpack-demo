@@ -1,0 +1,9 @@
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.741"}}
+ :aliases
+ {:dev {:main-opts  ["--main"          "cljs.main"
+                     "--compile-opts"  "build.edn"
+                     "--compile" "--repl"]}
+  :prod {:main-opts ["--main"          "cljs.main"
+                     "--compile-opts"  "build.edn"
+                     "--optimizations" "advanced"
+                     "--verbose" "--compile" "--serve"]}}}
